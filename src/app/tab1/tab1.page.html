@@ -65,4 +65,24 @@
   <!-- 選択したラジオボタンの値が表示される -->
   <div>{{selectedFruit}}</div>
 
+  <!-- 通常のラジオボタン -->
+  <ion-list>
+    <ion-radio-group [(ngModel)]="selectedAnimal">
+      <ion-item>
+        <ion-label>Dog</ion-label>
+        <ion-radio value="dog"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Cat</ion-label>
+        <ion-radio value="cat"></ion-radio>
+      </ion-item>
+      <ion-item>
+        <ion-label>Fish</ion-label>
+        <ion-radio value="fish"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+  <!-- 選択したラジオボタンの値が表示される -->
+  <div>{{selectedAnimal}}</div>
+
 </ion-content>
