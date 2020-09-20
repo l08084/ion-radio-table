@@ -19,13 +19,13 @@
         <!-- 設定No. -->
         <tr class="line-bottom">
           <th class="head">
-            りんご
+            Apple
           </th>
           <th class="head">
-            ぶどう
+            Grape
           </th>
           <th class="head">
-            さくらんぼ
+            Cherry
           </th>
         </tr>
       </thead>
@@ -33,24 +33,36 @@
         <!-- 選択ラジオボタン -->
         <tr class="line side-head">
           <th class="head">
-            <ion-list radio-group>
-              <ion-radio></ion-radio>
+            <ion-list>
+              <ion-radio-group [(ngModel)]="selectedFruit">
+                <ion-item>
+                  <ion-radio value="apple"></ion-radio>
+                </ion-item>
+              </ion-radio-group>
             </ion-list>
           </th>
           <th class="head">
-            <ion-list radio-group>
-              <ion-radio></ion-radio>
+            <ion-list>
+              <ion-radio-group [(ngModel)]="selectedFruit">
+                <ion-item>
+                  <ion-radio value="grape"></ion-radio>
+                </ion-item>
+              </ion-radio-group>
             </ion-list>
           </th>
           <th class="head">
-            <ion-list radio-group>
-              <ion-radio></ion-radio>
+            <ion-list>
+              <ion-radio-group [(ngModel)]="selectedFruit">
+                <ion-item>
+                  <ion-radio value="cherry"></ion-radio>
+                </ion-item>
+              </ion-radio-group>
             </ion-list>
           </th>
         </tr>
       </tbody>
     </table>
   </div>
+  <div>{{selectedFruit}}</div>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
 </ion-content>
